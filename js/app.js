@@ -45,11 +45,12 @@ let answerFive = prompt('Do I have a dog?').toUpperCase();
 
 if(answerFive === 'YES' || answerFive === 'Y'){
   alert('You are right!');
-}else if(answerFive === 'NO' || answerFive ==='N');{
+}else if(answerFive === 'NO' || answerFive ==='N'){
   alert('Incorrect. I do have a dog.');
 }
 console.log(`${userName} answered ${answerFive}`);
 
+alert(`Thank you for playing the game ${userName}! That was fun`);
 
 
 
