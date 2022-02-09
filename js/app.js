@@ -3,7 +3,7 @@
 console.log('Welcome!');
 
 let userName = prompt('What is your Name?');
-alert(`Hello ${userName}! Welcome! Lets play a Guessing game!`);
+alert(`Hello ${userName}! Welcome! Lets play a Guessing game! Please answer either yes or No.`);
 
 let answerOne = prompt('Is Inception my Favorite Movie?').toLowerCase();
 
@@ -50,7 +50,7 @@ if(answerFive === 'YES' || answerFive === 'Y'){
 }
 console.log(`${userName} answered ${answerFive}`);
 
-alert(`Thank you for playing the game ${userName}! That was fun`);
+alert(`Thank you for playing the game ${userName}! That was fun!`);
 
 
 
