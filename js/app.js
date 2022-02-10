@@ -3,9 +3,11 @@ let counter = 0;
 
 console.log('Welcome!');
 
+
 let userName = prompt('What is your Name?');
 alert(`Hello ${userName}! Welcome! Lets play a Guessing game! Please answer either yes or No.`);
 
+function questionOne() {
 let answerOne = prompt('Is Inception my Favorite Movie?').toLowerCase();
 
 if (answerOne === 'yes' || answerOne === 'y') {
@@ -15,7 +17,10 @@ if (answerOne === 'yes' || answerOne === 'y') {
   alert('You are incorrect! Inception is my all time Fav movie.');
 }
 console.log(`${userName} answered ${answerOne}`);
+}
+questionOne();
 
+function questionTwo() {
 let answerTwo = prompt('Do I enjoy coding?').toLowerCase();
 
 if (answerTwo === 'yes' || answerTwo === 'y') {
@@ -25,7 +30,10 @@ if (answerTwo === 'yes' || answerTwo === 'y') {
   alert('You are incorrect! I love Coding.');
 }
 console.log(`${userName} answered ${answerTwo}`);
+}
+questionTwo();
 
+function questionThree() {
 let answerThree = prompt('Do I live in Washington State?').toLowerCase();
 
 if (answerThree === 'yes' || answerThree === 'y') {
@@ -35,7 +43,10 @@ if (answerThree === 'yes' || answerThree === 'y') {
   alert('Wrong! I do live in WA state.');
 }
 console.log(`${userName} answered ${answerThree}`);
+}
+questionThree();
 
+function questionFour() {
 let answerFour = prompt('Is my favorite band Megadeth?').toUpperCase();
 
 if (answerFour === 'YES' || answerFour === 'Y') {
@@ -45,7 +56,10 @@ if (answerFour === 'YES' || answerFour === 'Y') {
   alert('You are wrong.Megadeth is my fav Band!');
 }
 console.log(`${userName} answered ${answerFour}`);
+}
+questionFour();
 
+function questionFive() {
 let answerFive = prompt('Do I have a dog?').toUpperCase();
 
 if (answerFive === 'YES' || answerFive === 'Y') {
@@ -55,9 +69,12 @@ if (answerFive === 'YES' || answerFive === 'Y') {
   alert('Incorrect. I do have a dog.');
 }
 console.log(`${userName} answered ${answerFive}`);
+}
+questionFive();
 
 alert(`Thank you for playing the game ${userName}! Now lets play a game where you guess the number that I am thinking of!`);
 
+function questionSix() {
 let myNumber = 5;
 let userNumber = prompt('What number am I thinking of?');
 let userTry = 3;
@@ -74,7 +91,7 @@ while (userTry) {
 
   }
   else if (userNumber < myNumber) {
-    alert('Too low!keep guessing.');
+    alert('Too low! Keep guessing.');
     userNumber = prompt('What number am i Thinking of?');
 
 
@@ -90,8 +107,11 @@ while (userTry) {
     break;
   }
 }
+}
+questionSix();
 
-let athletes = ['Tom Brady', 'Michael Jordan', 'Cristiano Ronaldo', 'Wayne Rooney', 'Lionel Messi', 'Lebron James', 'Joe Montana', 'Muhammad Ali', 'Mike Tyson', 'Usain Bolt'];
+function questionSeven() {
+//let athletes = ['Tom Brady', 'Michael Jordan', 'Cristiano Ronaldo', 'Wayne Rooney', 'Lionel Messi', 'Lebron James', 'Joe Montana', 'Muhammad Ali', 'Mike Tyson', 'Usain Bolt'];
 
 let userInput = 6;
 
@@ -116,6 +136,8 @@ while (userInput && !foundFav) {
     }
   }
 }
+}
+questionSeven();
 
 alert(`Well played ${userName}! Here are my fav athletes 'Tom Brady' and 'Cristiano Ronaldo'`);
 
