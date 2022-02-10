@@ -85,7 +85,7 @@ while (userTry) {
     break;
   }
   if (!userTry) {
-    alert('sorry!you have tried all 4 attempts, 4 is the number I am thinking of!');
+    alert('sorry!you have tried all 4 attempts, 5 is the number I was thinking of!');
     break;
   }
 }
