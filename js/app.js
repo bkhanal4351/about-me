@@ -33,6 +33,7 @@ console.log(`${userName} answered ${answerTwo}`);
 }
 questionTwo();
 
+function questionThree() {
 let answerThree = prompt('Do I live in Washington State?').toLowerCase();
 
 if (answerThree === 'yes' || answerThree === 'y') {
@@ -42,7 +43,8 @@ if (answerThree === 'yes' || answerThree === 'y') {
   alert('Wrong! I do live in WA state.');
 }
 console.log(`${userName} answered ${answerThree}`);
-
+}
+questionThree();
 let answerFour = prompt('Is my favorite band Megadeth?').toUpperCase();
 
 if (answerFour === 'YES' || answerFour === 'Y') {
