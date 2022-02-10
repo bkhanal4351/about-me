@@ -10,7 +10,7 @@ let answerOne = prompt('Is Inception my Favorite Movie?').toLowerCase();
 
 if (answerOne === 'yes' || answerOne === 'y') {
   alert('You are correct!');
-  counter = counter+1;
+  counter = counter + 1;
 } else if (answerOne === 'no' || answerOne === 'n') {
   alert('You are incorrect! Inception is my all time Fav movie.');
 }
@@ -20,7 +20,7 @@ let answerTwo = prompt('Do I enjoy coding?').toLowerCase();
 
 if (answerTwo === 'yes' || answerTwo === 'y') {
   alert('You are correct!');
-  counter = counter+1;
+  counter = counter + 1;
 } else if (answerTwo === 'no' || answerTwo === 'n') {
   alert('You are incorrect! I love Coding.');
 }
@@ -30,7 +30,7 @@ let answerThree = prompt('Do I live in Washington State?').toLowerCase();
 
 if (answerThree === 'yes' || answerThree === 'y') {
   alert('You guessed it right!');
-  counter = counter+1;
+  counter = counter + 1;
 } else if (answerThree === 'no' || answerThree === 'n') {
   alert('Wrong! I do live in WA state.');
 }
@@ -40,7 +40,7 @@ let answerFour = prompt('Is my favorite band Megadeth?').toUpperCase();
 
 if (answerFour === 'YES' || answerFour === 'Y') {
   alert('You are correct!');
-  counter=counter+1;
+  counter = counter + 1;
 } else if (answerFour === 'NO' || answerFour === 'N') {
   alert('You are wrong.Megadeth is my fav Band!');
 }
@@ -50,7 +50,7 @@ let answerFive = prompt('Do I have a dog?').toUpperCase();
 
 if (answerFive === 'YES' || answerFive === 'Y') {
   alert('You are right!');
-  counter=counter+1;
+  counter = counter + 1;
 } else if (answerFive === 'NO' || answerFive === 'N') {
   alert('Incorrect. I do have a dog.');
 }
@@ -84,12 +84,38 @@ while (userNumber != myNumber) {
     break;
   }
   if (!userTry) {
-    alert('you have tried all 4 attempts');
+    alert('sorry!you have tried all 4 attempts, 4 is the number I am thinking of!');
     break;
   }
 }
 
-alert(`Thank you  ${userName} you got ${counter} numbers of questions correct`);
+let athletes = ['Tom Brady', 'Michael Jordan', 'Cristiano Ronaldo', 'Wayne Rooney', 'Lionel Messi', 'Lebron James', 'Joe Montana', 'Muhammad Ali', 'Mike Tyson', 'Usain Bolt'];
+
+let userInput = 6;
+
+let favAthletes = ['tom brady', 'cristiano ronaldo'];
+
+let foundFav = false;
+
+while (userInput && !foundFav) {
+  let userGuess = prompt('which two of the listed 10 athletes are my favs?').toLowerCase();
+  userInput--;
+  for (let i = 0; i < favAthletes.length; i++) {
+
+
+    if (userGuess === favAthletes[i]) {
+      alert('You Guessed it right!');
+      counter = counter+1;
+
+
+      foundFav = true;
+    }
+  }
+}
+
+alert (`Well played ${userName}! Here are my fav athletes 'Tom Brady' and 'Cristiano Ronaldo'`);
+
+alert(`Thank you  ${userName} you got ${counter} questions correct`);
 
 
 
