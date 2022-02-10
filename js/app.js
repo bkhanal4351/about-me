@@ -110,6 +110,7 @@ while (userTry) {
 }
 questionSix();
 
+function questionSeven() {
 let athletes = ['Tom Brady', 'Michael Jordan', 'Cristiano Ronaldo', 'Wayne Rooney', 'Lionel Messi', 'Lebron James', 'Joe Montana', 'Muhammad Ali', 'Mike Tyson', 'Usain Bolt'];
 
 let userInput = 6;
@@ -135,6 +136,8 @@ while (userInput && !foundFav) {
     }
   }
 }
+}
+questionSeven();
 
 alert(`Well played ${userName}! Here are my fav athletes 'Tom Brady' and 'Cristiano Ronaldo'`);
 
