@@ -64,6 +64,7 @@ let userTry = 3;
 
 while (userTry) {
   userTry--;
+  //userNumber = prompt('What number am i Thinking of?');
 
 
   if (userNumber > myNumber) {

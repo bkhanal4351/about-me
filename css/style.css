@@ -18,4 +18,6 @@ h2{
 ol {
   text-align: center;
   color: blue;
+  list-style-position: inside;
+  list-style-type: decimal;
 }
