@@ -62,7 +62,7 @@ let myNumber = 5;
 let userNumber = prompt('What number am I thinking of?');
 let userTry = 3;
 
-while (userNumber != myNumber) {
+while (userTry) {
   userTry--;
 
 
@@ -80,6 +80,7 @@ while (userNumber != myNumber) {
   }
   else if (userNumber == myNumber) {
     alert('You Guessed it right!');
+    console.log('here');
     counter = counter + 1;
     break;
   }
@@ -93,7 +94,7 @@ let athletes = ['Tom Brady', 'Michael Jordan', 'Cristiano Ronaldo', 'Wayne Roone
 
 let userInput = 6;
 
-let favAthletes = ['tom brady', 'cristiano ronaldo'];
+let favAthletes = ['tom brady','cristiano ronaldo'];
 
 let foundFav = false;
 
@@ -106,6 +107,8 @@ while (userInput && !foundFav) {
     if (userGuess === favAthletes[i]) {
       alert('You Guessed it right!');
       counter = counter+1;
+    
+
 
 
       foundFav = true;
@@ -113,7 +116,7 @@ while (userInput && !foundFav) {
   }
 }
 
-alert (`Well played ${userName}! Here are my fav athletes 'Tom Brady' and 'Cristiano Ronaldo'`);
+alert(`Well played ${userName}! Here are my fav athletes 'Tom Brady' and 'Cristiano Ronaldo'`);
 
 alert(`Thank you  ${userName} you got ${counter} questions correct`);
 
