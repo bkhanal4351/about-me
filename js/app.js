@@ -59,7 +59,7 @@ console.log(`${userName} answered ${answerFour}`);
 }
 questionFour();
 
-
+function questionFive() {
 let answerFive = prompt('Do I have a dog?').toUpperCase();
 
 if (answerFive === 'YES' || answerFive === 'Y') {
@@ -69,6 +69,8 @@ if (answerFive === 'YES' || answerFive === 'Y') {
   alert('Incorrect. I do have a dog.');
 }
 console.log(`${userName} answered ${answerFive}`);
+}
+questionFive();
 
 alert(`Thank you for playing the game ${userName}! Now lets play a game where you guess the number that I am thinking of!`);
 
