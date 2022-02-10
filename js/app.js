@@ -45,6 +45,8 @@ if (answerThree === 'yes' || answerThree === 'y') {
 console.log(`${userName} answered ${answerThree}`);
 }
 questionThree();
+
+function questionFour() {
 let answerFour = prompt('Is my favorite band Megadeth?').toUpperCase();
 
 if (answerFour === 'YES' || answerFour === 'Y') {
@@ -54,6 +56,9 @@ if (answerFour === 'YES' || answerFour === 'Y') {
   alert('You are wrong.Megadeth is my fav Band!');
 }
 console.log(`${userName} answered ${answerFour}`);
+}
+questionFour();
+
 
 let answerFive = prompt('Do I have a dog?').toUpperCase();
 
