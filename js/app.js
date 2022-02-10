@@ -1,5 +1,5 @@
 'use strict';
-let counter = 0;
+/*let counter = 0;
 
 console.log('Welcome!');
 
@@ -72,8 +72,9 @@ console.log(`${userName} answered ${answerFive}`);
 }
 questionFive();
 
-alert(`Thank you for playing the game ${userName}! Now lets play a game where you guess the number that I am thinking of!`);
+alert(`Thank you for playing the game ${userName}! Now lets play a game where you guess the number that I am thinking of!`);*/
 
+function questionSix() {
 let myNumber = 5;
 let userNumber = prompt('What number am I thinking of?');
 let userTry = 3;
@@ -90,7 +91,7 @@ while (userTry) {
 
   }
   else if (userNumber < myNumber) {
-    alert('Too low!keep guessing.');
+    alert('Too low! Keep guessing.');
     userNumber = prompt('What number am i Thinking of?');
 
 
@@ -106,6 +107,8 @@ while (userTry) {
     break;
   }
 }
+}
+questionSix();
 
 let athletes = ['Tom Brady', 'Michael Jordan', 'Cristiano Ronaldo', 'Wayne Rooney', 'Lionel Messi', 'Lebron James', 'Joe Montana', 'Muhammad Ali', 'Mike Tyson', 'Usain Bolt'];
 
