@@ -3,9 +3,11 @@ let counter = 0;
 
 console.log('Welcome!');
 
+
 let userName = prompt('What is your Name?');
 alert(`Hello ${userName}! Welcome! Lets play a Guessing game! Please answer either yes or No.`);
 
+function questionOne() {
 let answerOne = prompt('Is Inception my Favorite Movie?').toLowerCase();
 
 if (answerOne === 'yes' || answerOne === 'y') {
@@ -15,6 +17,8 @@ if (answerOne === 'yes' || answerOne === 'y') {
   alert('You are incorrect! Inception is my all time Fav movie.');
 }
 console.log(`${userName} answered ${answerOne}`);
+}
+questionOne();
 
 let answerTwo = prompt('Do I enjoy coding?').toLowerCase();
 
@@ -25,6 +29,7 @@ if (answerTwo === 'yes' || answerTwo === 'y') {
   alert('You are incorrect! I love Coding.');
 }
 console.log(`${userName} answered ${answerTwo}`);
+}
 
 let answerThree = prompt('Do I live in Washington State?').toLowerCase();
 
