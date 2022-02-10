@@ -20,6 +20,7 @@ console.log(`${userName} answered ${answerOne}`);
 }
 questionOne();
 
+function questionTwo() {
 let answerTwo = prompt('Do I enjoy coding?').toLowerCase();
 
 if (answerTwo === 'yes' || answerTwo === 'y') {
@@ -30,6 +31,7 @@ if (answerTwo === 'yes' || answerTwo === 'y') {
 }
 console.log(`${userName} answered ${answerTwo}`);
 }
+questionTwo();
 
 let answerThree = prompt('Do I live in Washington State?').toLowerCase();
 
