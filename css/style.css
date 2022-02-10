@@ -7,5 +7,15 @@ h1{
 }
 p{
   color: red;
+  margin: 15px;
   
+}
+h2{
+  text-align: center;
+  margin: 15px;
+  color: blue;
+}
+ol {
+  text-align: center;
+  color: blue;
 }
