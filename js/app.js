@@ -78,7 +78,7 @@ while (userTry) {
 
 
   }
-  else if (userNumber == myNumber) {
+  else if (+userNumber === myNumber) {
     alert('You Guessed it right!');
     console.log('here');
     counter = counter + 1;
